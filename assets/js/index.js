@@ -31,7 +31,7 @@ function renderAvatar(data) {
     $('#welcome').html(`欢迎 ${name}`);
     if (data.user_pic) {
         $('.text-avatar').hide();
-        $('.layui-nav-img').attr('src', data.userpic).show()
+        $('.layui-nav-img').attr('src', data.user_pic).show()
     } else {
         $('.layui-nav-img').hide();
         let first = name[0].toUpperCase()
