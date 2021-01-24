@@ -56,6 +56,11 @@ $(function () {
         });
     })
 
+    $('tbody').on('click', '.btnEdit', function (e) {
+        let id = $(this).attr('data-id')
+        location.href = 'art_edit.html?id=' + id
+    })
+
     // 定义美化时间格式的过滤器
     template.defaults.imports.dateFormat = function (date) {
         let dt = new Date(date)
